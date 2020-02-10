@@ -1,0 +1,89 @@
+repositories {
+    mavenCentral()
+}
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.compileSdk
+        versionCode 6
+        versionName "1.0.6"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+            buildConfigField 'String', 'BASE_URL', '"https://www.kiehls.com.tr/powerful-wrinkle-reducing-eye-cream?response_type=json/"'
+        }
+        debug {
+            buildConfigField 'String', 'BASE_URL', '"https://www.kiehls.com.tr/powerful-wrinkle-reducing-eye-cream?response_type=json/"'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility versions.sourceCompat
+        targetCompatibility versions.targetCompat
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api deps.support.appCompat
+    api deps.support.recyclerView
+    api deps.support.cardView
+    api deps.support.support
+    api deps.support.designSupport
+
+
+    api deps.android.lifecycleExt
+    api deps.android.lifecycleCommon
+
+    api deps.kotlin.stdlib
+
+    api deps.reactivex.rxJava
+    api deps.reactivex.rxAndroid
+    api deps.reactivex.rxRelay
+
+    api deps.google.dagger
+    kapt deps.google.daggerProcessor
+    api deps.google.gson
+
+
+    api deps.square.picasso
+    api deps.square.okhttpDownloader
+
+    api deps.square.retrofit
+    api deps.square.retrofitIntecepter
+    api deps.square.okhttp
+    api deps.square.gsonConverter
+    api deps.square.retrofitRxAdapter
+    api deps.square.timber
+
+    api deps.additional.jodaTime
+
+    implementation deps.muddzdev
+
+    implementation 'com.androidadvance:topsnackbar:1.1.1'
+
+    implementation deps.anko
+
+
+    api deps.calligraphy
+    api deps.calligraphy
+
+
+}

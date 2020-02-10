@@ -1,0 +1,43 @@
+<resources>
+    <declare-styleable name="SquareGridLayout">
+        <attr name="size" format="integer" />
+    </declare-styleable>
+
+
+    <style name="HepsiBuradaTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--Translucent status bar-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogFragmentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogFragmentAnimation</item>
+    </style>
+
+    <style name="DialogFragmentAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/slide_fragment_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_fragment_left</item>
+    </style>
+
+
+    <!--FONTS START-->
+
+    <style name="RobotoLight">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--FONTS END-->
+
+
+</resources>

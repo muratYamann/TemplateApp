@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FD450F</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#FD4848</color>
+    <color name="colorPane">#33C2CAC9</color>
+    <color name="colorIconLauncherBackground">#FFFFFF</color>
+
+    <color name="hepsi_purple">#6300DB</color>
+    <color name="hepsi_blue">#43AFDB</color>
+    <color name="hepsi_orange">#F3491A</color>
+    <color name="hepsi_yellow">#EA8D1F</color>
+    <color name="hepsi_darkpink">#571049</color>
+    <color name="hepsi_green">#32B38D</color>
+
+    <color name="White">#FFFFFF</color>
+
+
+    <color name="iceBlueTwo">#f5fcff</color>
+    <color name="charcoalGrey">#242424</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <!--tool bar transparanet -->
+    <color name="black_alpha_40">#66000000</color>
+
+
+    <color name="white">#ffffff</color>
+
+    <color name="youtube_description_color">#858484</color>
+    <color name="youtube_titlecolor">#171717</color>
+
+    <color name="pressed">#000000</color>
+    <color name="focused">#000000</color>
+    <color name="normal">#000000</color>
+    <color name="black">#000000</color>
+    <color name="desctription">#1F1F1F</color>
+
+</resources>

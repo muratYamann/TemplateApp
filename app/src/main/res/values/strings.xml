@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Kiehls</string>
+
+    <string name="need_internet_posts">internet bağlantınız yok. Lütfen kontrol edip tekrar deneyin.</string>
+    <string name="failed_post_try_again">işlem Başarısız, yüklenemedi. Lütfen tekrar deneyin.</string>
+    <string name="exitapp">Uygulamadan çıkmak istediğine emin misin? </string>
+    <string name="connection_failed">Bağlantı Sağlanamadı</string>
+    <string name="connection_failed_tex">İnternet bağlantınızın çalıştığını kontrol edin ve tekrar bağlanmayı deneyin..</string>
+    <string name="btnTryAgain">Tekrar Deneyin</string>
+    <string name="splash_appname">Hepsiburada </string>
+    <string name="emptyText">Üzgünüz içerik bulunamadı</string>
+    <string name="yes" translatable="false">Evet</string>
+    <string name="NoCancel">Vazgeç</string>
+
+
+    <string name="setting" translatable="false">Ayarlar</string>
+    <string name="HOME_ACTIVITY">home</string>
+    <string name="expired">Expired!!</string>
+
+
+</resources>
